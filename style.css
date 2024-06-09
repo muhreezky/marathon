@@ -20,6 +20,85 @@ header {
   color: #fff;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 30px 45px;
+  border-radius: 12px;
+  /* box-shadow: hsl(0, 0%, 15%); */
+  filter: drop-shadow(0 0rem 0.45rem #090909);
+}
+
+footer {
+  flex: none;
+  padding: 20px 30px;
+  background-color: #303030;
+  color: #f9f9f9;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.no-decorate {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  outline: 0;
+  font-size: 16px;
+  border: 1px solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  transition: border .1s ease-in-out, filter 0.075s ease-in-out;
+}
+
+.input:focus {
+  filter: drop-shadow(0 0 0.3rem #0051ff);
+  border: 3.25px solid #0051ff;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.hover\:pointer:hover {
+  cursor: pointer;
+}
+
+.button {
+  padding: 15px 22px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #212121;
+  color: white;
+  transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #323232;
+}
+
+.button:active {
+  transform: scale(0.925);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
 }
